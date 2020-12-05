@@ -1,5 +1,7 @@
 import { env } from 'process';
 import { Container, Card, Form, Button } from 'react-bootstrap';
+import base_url from './api/base_url';
+import hello from './api/hello';
 
 export default function Home() {
   const payload = {
@@ -8,7 +10,7 @@ export default function Home() {
   }
 
   let onSubmit = () => {
-    console.log(payload, env)
+    console.log(payload, base_url)
   }
 
   return (
