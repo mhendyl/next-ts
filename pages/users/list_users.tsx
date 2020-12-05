@@ -1,7 +1,6 @@
 import base_url_api from "../api/base_url"
 
 function ListUsers({ listUserData }) {
-  console.log(base_url_api + '/posts');
 
   return (
     <ul>
